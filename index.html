@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lucky Beauty Parlour</title>
+
+  <!-- Google Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <header class="nav glass">
+    <div class="container nav-inner">
+      <a class="brand" href="#">Lucky <span>Beauty</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#appointment">Book</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger icon-btn" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section id="hero" class="hero section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1 class="hero-title">Peachy Glow. Timeless Beauty.</h1>
+        <p class="hero-sub">Professional makeup, skin & hair services crafted for your best look.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#appointment">Book Appointment</a>
+          <a class="btn btn-ghost" href="#services">Explore Services</a>
+        </div>
+        <ul class="features">
+          <li><i class="fa-solid fa-check"></i> Expert Stylists</li>
+          <li><i class="fa-solid fa-check"></i> Clean & Modern Studio</li>
+          <li><i class="fa-solid fa-check"></i> Bridal & Party Makeup</li>
+        </ul>
+      </div>
+
+      <div class="hero-media">
+        <div class="card glass media-card">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=900&auto=format&fit=crop" alt="Beauty" />
+          <div class="media-caption">Relaxing spa & care</div>
+        </div>
+
+        <div class="floating-note">Lucky Beauty Parlour — <strong>Book Today</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SERVICES ====== -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">Tailored beauty services to make you shine.</p>
+
+      <div class="cards-grid">
+        <article class="service-card glass">
+          <i class="fa-solid fa-heart fa-2x"></i>
+          <h3>Bridal Makeup</h3>
+          <p>Complete bridal looks — trial, on-day support & touch-ups.</p>
+          <span class="price">From ₹7,999</span>
+        </article>
+
+        <article class="service-card glass">
+          <i class="fa-solid fa-spa fa-2x"></i>
+          <h3>Facial & Spa</h3>
+          <p>Hydrating, brightening and detox facials for glowing skin.</p>
+          <span class="price">From ₹999</span>
+        </article>
+
+        <article class="service-card glass">
+          <i class="fa-solid fa-scissors fa-2x"></i>
+          <h3>Hair Styling</h3>
+          <p>Cuts, blowouts, and styling for all occasions.</p>
+          <span class="price">From ₹499</span>
+        </article>
+
+        <article class="service-card glass">
+          <i class="fa-solid fa-hand-sparkles fa-2x"></i>
+          <h3>Nail Art</h3>
+          <p>Trendy nail designs, gel polish & nail care.</p>
+          <span class="price">From ₹399</span>
+        </article>
+
+        <article class="service-card glass">
+          <i class="fa-solid fa-magic fa-2x"></i>
+          <h3>Party Makeup</h3>
+          <p>Glam looks for parties and photoshoots.</p>
+          <span class="price">From ₹1,499</span>
+        </article>
+
+        <article class="service-card glass">
+          <i class="fa-solid fa-truck-fast fa-2x"></i>
+          <h3>Home Service</h3>
+          <p>Selected services available at your home.</p>
+          <span class="price">Call for rates</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== GALLERY / CAROUSEL ====== -->
+  <section id="gallery" class="section bg-soft">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <p class="section-sub">Some of our favourite looks</p>
+
+      <div class="carousel" id="carousel">
+        <div class="slide active"><img src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1522336572468-97b06e8ef143?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+      </div>
+
+      <div class="carousel-controls">
+        <button id="prev" class="icon-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="next" class="icon-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2 class="section-title">What clients say</h2>
+      <div class="testimonials" id="testSlider">
+        <blockquote class="testimonial active">
+          <p>“Amazing experience — the team made me feel beautiful for my wedding day.”</p>
+          <cite>— Asha R.</cite>
+        </blockquote>
+
+        <blockquote class="testimonial">
+          <p>“Relaxing ambience and professional service. Highly recommended!”</p>
+          <cite>— Neha S.</cite>
+        </blockquote>
+
+        <blockquote class="testimonial">
+          <p>“Loved my hair and makeup — stayed perfect all night.”</p>
+          <cite>— Priya K.</cite>
+        </blockquote>
+
+        <div class="test-controls">
+          <button id="testPrev" class="icon-btn"><i class="fa-solid fa-chevron-left"></i></button>
+          <button id="testNext" class="icon-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== APPOINTMENT FORM ====== -->
+  <section id="appointment" class="section bg-soft">
+    <div class="container">
+      <h2 class="section-title">Book Appointment</h2>
+      <p class="section-sub">Quick booking — we will confirm by phone/WhatsApp</p>
+
+      <form id="appointmentForm" class="form-grid glass">
+    <input type="text" name="name" placeholder="Full name" required />
+    <input type="tel" name="phone" placeholder="Phone (e.g. 9876543210)" pattern="[0-9]{10}" required />
+    <input type="email" name="email" placeholder="Email (optional)"/>
+    <input type="datetime-local" name="datetime" required />
+    <select name="service" required>
+      <option value="">Choose service</option>
+      <option> Permanant hair straightening </option>
+<option>Hair shades</option>
+<option>Hydra facial </option>
+<option>Permanant eye brow</option>
+<option>Bridal makeup </option>
+<option>Light makeup</option>
+      <option>Skin Care (facials,clean-ups,bleaching,waxing,threading)</option>
+      <option>Hair Care (cuts, colouring, styling, treatments like kertain, spa)</option>
+      <option>Hand & Foot Care</option>
+    </select>
+    <textarea name="note" rows="2" placeholder="Any notes (allergies, preferences)"></textarea>
+    <textarea name="address" rows="2" placeholder="Enter Your Address"></textarea>
+    <button type="submit" class="btn btn-primary full">Confirm Booking</button>
+</form>
+
+
+      <!-- Booking success modal -->
+      <div class="modal" id="successModal" aria-hidden="true">
+        <div class="modal-inner glass">
+          <button class="modal-close" id="closeModal"><i class="fa-solid fa-xmark"></i></button>
+          <h3>Booking Received 💖</h3>
+          <p>Thanks! We received your booking. We will contact you to confirm the time.</p>
+          <!-- <a class="btn btn-primary" href="https://wa.me/919390966127?text=Hi%20Lucky%20Beauty%20Parlour%2C%20I%20just%20booked%20an%20appointment." target="_blank">Chat on WhatsApp</a> -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== CONTACT & MAP ====== -->
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div>
+        <h3>Contact</h3>
+        <p><strong>Lucky Beauty Parlour</strong><br/>Near Bajaj Motors, Chandram Palem, Chandrampalem, Srinivasa Nagar, Madhurawada, Visakhapatnam, Andhra Pradesh 530048</p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:+917093557846">+91 7093557846</a></p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:luckybeautyparlour.com">luckybeautyparlour.com</a></p>
+
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a> &nbsp;
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="map-section">
+    <h3>Find us</h3>
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237.41006038261852!2d83.35661978471394!3d17.81231914669004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395b959496cacb%3A0xcb7e92b183b37e39!2sLucky%20Beauty%20Parlour!5e0!3m2!1sen!2sin!4v1765215506578!5m2!1sen!2sin"
+            width="1100" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+
+    </div>
+  </section>
+
+  <!-- ====== FOOTER & WHATSAPP FLOAT ====== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Lucky Beauty Parlour</div>
+      <!-- <div>Made with ❤️</div> -->
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a class="whatsapp-fab" href="https://wa.me/917093557846?text=Hello%20Lucky%20Beauty%20Parlour%20I%20want%20to%20book%20an%20appointment" target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ====== SCRIPTS ====== -->
+  <script src="script.js"></script>
+</body>
+</html>
